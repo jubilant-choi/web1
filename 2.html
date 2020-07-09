@@ -16,31 +16,35 @@
       text-align:center;
       text-decoration:none;
      }
-    ol {
-      border-right:1px solid gray;
-      width:100px;
-      margin:0;
-      padding:20px;
+    #grid{
+       display: grid;
+       grid-template-columns: 150px 1fr;
      }
+     #grid ol {
+      padding-left:30px;
+     }
+     #grid #article{
+       padding-left:20px;
  </style>
 </head>
 
 
 <body>
- 
-<h1><a href="index.html">이말년</a></h1>
-
-<ol>
- <li><a href="1.html">컨텐츠</a></li>
- <li><a href="2.html">관련 용어, 밈</a></li>
-</ol>
-<br>
-
-<h2>관련 용어, 밈</h2>
-<p style="margin-top:40px;"><h3>병건하다</h3></p>
-침착맨의 본명이 이병건임을 응용하여 침착하다를 다르게 바꾼 밈. "침착"이 언급되면 채팅창에 병건하다는 언급이 자주 올라온다. 경건과 병건의 발음 유사성을 이용하여 경건하다 라는 뜻으로도 많이 쓰인다. 침착맨 본인보다는 트수와 타 스트리머가 더 쓰는 밈.
-  <br>
-
+  <h1><a href="index.html">이말년</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">컨텐츠</a></li>
+      <li><a href="2.html">관련 용어, 밈</a></li>
+    </ol>
+    <div id="article">
+      <h2>관련 용어, 밈</h2>
+      <h3>병건하다</h3>
+      <p>
+        침착맨의 본명이 이병건임을 응용하여 침착하다를 다르게 바꾼 밈. "침착"이 언급되면 채팅창에 병건하다는 언급이 자주 올라온다. 경건과 병건의 발음 유사성을 이용하여 경건하다 라는 뜻으로도 많이 쓰인다. 침착맨 본인보다는 트수와 타 스트리머가 더 쓰는 밈.
+      </p>
+    </div>
+  </div>
+  
 <div id="disqus_thread"></div>
 <script>
 
